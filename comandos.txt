@@ -1,5 +1,6 @@
 yarn sequelize migration:create --name=create-users /* cria a migration */
 yarn sequelize db:migrate:undo:all /* Desfaz todas as migrations */
 yarn sequelize db:migrate /* roda as migrates */
+yarn sequelize migration:create --name=create-files
 
 sudo docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d kartoza/postgis
