@@ -4,3 +4,4 @@ yarn sequelize db:migrate /* roda as migrates */
 yarn sequelize migration:create --name=create-files
 
 sudo docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d kartoza/postgis
+sudo docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
